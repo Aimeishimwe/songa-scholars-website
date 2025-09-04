@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Programs from "./pages/Programs";
-import Scholarship from "./pages/Scholarships";
 import Impact from "./pages/Impact";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";

@@ -1,15 +1,15 @@
-// src/main.jsx
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom"; // use HashRouter for GitHub Pages
 import App from "./App";
 
-// Global CSS (load base styles first)
+// Global CSS
 import "./css/global.css";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
