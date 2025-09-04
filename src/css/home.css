@@ -1,0 +1,92 @@
+/* src/css/home.css */
+
+/* Variables for brand colors */
+:root {
+  --gold: #d4af37;
+  --gold-dark: #b88a1e;
+  --dark: #0e0b10;
+  --dark2: #1a151f;
+  --white-opacity: rgba(255, 255, 255, 0.8);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to bottom, var(--dark), var(--dark2));
+  color: white;
+  padding: 7rem 1rem 6rem;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      circle at 10% 10%,
+      var(--gold) 33,
+      transparent 70%
+    ),
+    radial-gradient(circle at 90% 20%, var(--gold-dark) 22, transparent 60%);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.hero h1 {
+  font-family: serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.hero p {
+  max-width: 36rem;
+  margin: 1.5rem auto 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Testimonials */
+.testimonials {
+  background: linear-gradient(to bottom, var(--dark), var(--dark2));
+  padding: 5rem 1rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  padding: 1.5rem;
+}
+
+.testimonial-card blockquote {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.testimonial-card figcaption {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}

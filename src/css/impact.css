@@ -1,0 +1,83 @@
+/* src/css/impact.css */
+
+.impact {
+  background-color: #0e0b10;
+  color: white;
+  padding: 5rem 1rem;
+}
+
+/* Stats section */
+.impact-stats {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+}
+
+@media (min-width: 640px) {
+  .impact-stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.impact-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.impact-number {
+  font-family: serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.impact-label {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Media section */
+.impact-photos {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 3rem;
+}
+
+.impact-photo-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.impact-gallery-btn {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn-golden {
+  background: linear-gradient(90deg, #d4af37, #f5d76e);
+  color: #0e0b10;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-golden:hover {
+  background: linear-gradient(90deg, #f5d76e, #d4af37);
+}
+
+@media (min-width: 768px) {
+  .impact-media {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

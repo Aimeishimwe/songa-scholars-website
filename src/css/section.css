@@ -1,0 +1,7 @@
+/* src/css/section.css */
+
+.section {
+  scroll-margin-top: 96px; /* same as scroll-mt-24 */
+  padding: 5rem 1rem; /* default vertical padding */
+  position: relative;
+}

@@ -1,0 +1,62 @@
+/* src/css/programs.css */
+
+.programs {
+  background-color: var(--dark);
+  color: white;
+  padding: 5rem 1rem;
+}
+
+.program-cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+}
+
+@media (min-width: 640px) {
+  .program-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .program-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.program-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.program-card:hover {
+  border-color: #d4af37; /* gold hover border */
+}
+
+.program-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #d4af37;
+  color: #0e0b10;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.program-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.program-card p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}

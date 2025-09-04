@@ -1,0 +1,61 @@
+/* src/css/scholarships.css */
+
+.scholarships {
+  background: linear-gradient(to bottom, #0e0b10, #1a151f);
+  color: white;
+  padding: 5rem 1rem;
+}
+
+.scholarship-cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .scholarship-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.scholarship-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.scholarship-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #d4af37;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.scholarship-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.scholarship-card .deadline {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.scholarship-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.scholarship-cta {
+  margin-top: 2rem;
+  text-align: center;
+}

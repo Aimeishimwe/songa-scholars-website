@@ -1,0 +1,129 @@
+/* src/css/contact.css */
+
+.contact {
+  background: linear-gradient(to bottom, #0e0b10, #1a151f);
+  color: white;
+  padding: 5rem 1rem;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact-form,
+.newsletter {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-grid .full-width {
+  grid-column: 1 / -1;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.25rem;
+}
+
+.contact-form input,
+.contact-form textarea,
+.newsletter input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #0e0b10;
+  color: white;
+  font-size: 0.875rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder,
+.newsletter input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reply-time {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn {
+  background-color: #d4af37;
+  color: #0e0b10;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.25rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background-color: #b88a1e;
+}
+
+.newsletter h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.newsletter p {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+}
+
+.newsletter-info {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
