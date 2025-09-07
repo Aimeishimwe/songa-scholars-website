@@ -44,18 +44,21 @@ const Navbar = () => {
           <Link to="/">{t.home}</Link>
           <Link to="/about">{t.about}</Link>
           <Link to="/programs">{t.programs}</Link>
-          <Link to="/scholarships">{t.scholarships}</Link>
-          <Link to="/impact">{t.impact}</Link>
-          <Link to="/team">{t.team}</Link>
+          {/* <Link to="/scholarships">{t.scholarships}</Link> */}
+          {/* <Link to="/impact">{t.impact}</Link> */}
+          {/* <Link to="/team">{t.team}</Link> */}
           <Link to="/contact">{t.contact}</Link>
-          <Link to="/donate" className="donate-btn">
+          </nav>
+          <div className="donate-btn">
+          <Link to="/donate" >
             {t.donate}
           </Link>
-        </nav>
+          </div>
+      
 
         <div className="nav-actions">
           {/* Language Switcher with EN + FR inside circle */}
-          <div className="lang-circle">
+          {/* <div className="lang-circle">
             <span
               className={lang === "EN" ? "active" : ""}
               onClick={() => setLang("EN")}
@@ -68,7 +71,7 @@ const Navbar = () => {
             >
               FR
             </span>
-          </div>
+          </div> */}
 
           {/* Hamburger */}
           <button className="hamburger" onClick={() => setOpen(!open)}>

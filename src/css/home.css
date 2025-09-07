@@ -1,5 +1,3 @@
-/* src/css/home.css */
-
 /* Variables for brand colors */
 :root {
   --gold: #d4af37;
@@ -9,41 +7,121 @@
   --white-opacity: rgba(255, 255, 255, 0.8);
 }
 
-/* Hero */
+/* Hero (full page) */
 .hero {
-  background: linear-gradient(to bottom, var(--dark), var(--dark2));
-  color: white;
-  padding: 7rem 1rem 6rem;
-  text-align: center;
   position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+
+  background: url("/rwandan-students-classroom.png") center/cover no-repeat;
 }
 
+/* Gradient overlay */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-      circle at 10% 10%,
-      var(--gold) 33,
-      transparent 70%
-    ),
-    radial-gradient(circle at 90% 20%, var(--gold-dark) 22, transparent 60%);
-  opacity: 0.2;
-  pointer-events: none;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.6),     /* dark layer */
+    rgba(0, 0, 0, 0.5),     /* another dark tone */
+    rgba(14, 11, 16, 0.8)   /* deep dark accent */
+  );
+  background-size: 200% 200%;
+  animation: gradientMove 12s ease-in-out infinite;
+  z-index: 0;
 }
 
+/* Subtle shimmer overlay */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/rwandan-students-mentors.png");
+  opacity: 0.1;
+  animation: shimmer 20s linear infinite;
+  z-index: 0;
+}
+
+/* Floating decorative images */
+.hero .floating {
+  position: absolute;
+  font-size: 4rem; /* icons size */
+  color: var(--gold); /* match your theme */
+  opacity: 0.7;
+  animation: float 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+.hero .floating:nth-child(1) {
+  top: 15%;
+  left: 10%;
+  animation-delay: 0s;
+}
+.hero .floating:nth-child(2) {
+  bottom: 20%;
+  right: 15%;
+  animation-delay: 2s;
+}
+.hero .floating:nth-child(3) {
+  top: 30%;
+  right: 5%;
+  animation-delay: 4s;
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Hero text */
 .hero h1 {
   font-family: serif;
   font-size: 3rem;
   font-weight: 700;
   margin-top: 1.5rem;
+  line-height: 1.2;
 }
 
 .hero p {
   max-width: 36rem;
   margin: 1.5rem auto 0;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
@@ -69,7 +147,7 @@
 
 @media (min-width: 768px) {
   .testimonial-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -89,4 +167,13 @@
   margin-top: 1rem;
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* Ensure hero content is above overlays */
+.hero h1,
+.hero p,
+.hero .hero-buttons,
+.hero .pill {
+  position: relative;
+  z-index: 2;
 }
