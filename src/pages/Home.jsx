@@ -1,10 +1,11 @@
-// src/pages/Home.jsx
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
 import Section from "../components/Section";
 import Container from "../components/Container";
+import { FaGraduationCap, FaBook, FaBullseye } from "react-icons/fa";
+
 import Pill from "../components/Pill";
 import SectionHeader from "../components/SectionHeader";
 import "../css/home.css";
@@ -16,6 +17,12 @@ const Home = () => {
       <main>
         {/* Hero Section */}
         <Section className="hero">
+
+  {/* Floating decorative icons */}
+  <FaGraduationCap className="floating" />
+  <FaBook className="floating" />
+  <FaBullseye className="floating" />
+
           <Container>
             <Pill>
               <span className="dot" /> Step Forward — "Songa"
@@ -38,7 +45,29 @@ const Home = () => {
           </Container>
         </Section>
 
-        {/* Testimonials */}
+
+  <Container>
+    <Pill>
+      <span className="dot" /> Step Forward — "Songa"
+    </Pill>
+    <h1>
+      Empowering Students to Step Forward in Education & Leadership
+    </h1>
+    <p>
+      We mentor, inform, and equip students from primary school to university
+      with scholarships guidance, skill-building, and practical
+      opportunities—so they can lead change in their communities.
+    </p>
+    <div className="hero-buttons">
+      <Button to="/programs">Explore Programs</Button>
+      <Button variant="ghost" to="/scholarship">
+        Find Scholarships
+      </Button>
+    </div>
+  </Container>
+</Section>
+
+        {/* Testimonials Section */}
         <Section className="testimonials">
           <Container>
             <SectionHeader
@@ -60,6 +89,13 @@ const Home = () => {
                   apply on time. The workshops were practical and engaging.”
                 </blockquote>
                 <figcaption>— Head Teacher, Kigali, Partner School</figcaption>
+              </div>
+              <div className="testimonial-card">
+                <blockquote>
+                  “I learned how to apply for scholarships confidently and now
+                  mentor my classmates. Songa changed my perspective.”
+                </blockquote>
+                <figcaption>— Jean P., High School Student</figcaption>
               </div>
             </div>
           </Container>
