@@ -12,6 +12,9 @@ const Navbar = () => {
       home: "Home",
       about: "About",
       programs: "Programs",
+      mentorship: "Mentorship",
+      bootcamps: "Bootcamps",
+      capacity: "Capacity",
       scholarships: "Scholarships",
       impact: "Impact",
       team: "Team",
@@ -22,6 +25,9 @@ const Navbar = () => {
       home: "Accueil",
       about: "À propos",
       programs: "Programmes",
+      mentorship: "Mentorat",
+      bootcamps: "Bootcamps",
+      capacity: "Capacité",
       scholarships: "Bourses",
       impact: "Impact",
       team: "Équipe",
@@ -43,10 +49,27 @@ const Navbar = () => {
         <nav className={`nav-links ${open ? "open" : ""}`}>
           <Link to="/">{t.home}</Link>
           <Link to="/about">{t.about}</Link>
+
           <Link to="/programs">{t.programs}</Link>
           {/* <Link to="/scholarships">{t.scholarships}</Link> */}
           {/* <Link to="/impact">{t.impact}</Link> */}
           {/* <Link to="/team">{t.team}</Link> */}
+
+
+          {/* Programs Dropdown */}
+          <div className="dropdown">
+            <Link to="/programs">{t.programs}</Link>
+            <div className="dropdown-content">
+              <a href="/programs#mentorship">{t.mentorship}</a>
+              <a href="/programs#bootcamps">{t.bootcamps}</a>
+              <a href="/programs#capacity-building">{t.capacity}</a>
+              <a href="/programs#scholarships">{t.scholarships}</a>
+            </div>
+          </div>
+
+          <Link to="/impact">{t.impact}</Link>
+          <Link to="/team">{t.team}</Link>
+
           <Link to="/contact">{t.contact}</Link>
           </nav>
           <div className="donate-btn">
@@ -57,8 +80,10 @@ const Navbar = () => {
       
 
         <div className="nav-actions">
+
           {/* Language Switcher with EN + FR inside circle */}
           {/* <div className="lang-circle">
+
             <span
               className={lang === "EN" ? "active" : ""}
               onClick={() => setLang("EN")}
@@ -73,7 +98,7 @@ const Navbar = () => {
             </span>
           </div> */}
 
-          {/* Hamburger */}
+          {/* Hamburger for mobile */}
           <button className="hamburger" onClick={() => setOpen(!open)}>
             {open ? "✕" : "☰"}
           </button>

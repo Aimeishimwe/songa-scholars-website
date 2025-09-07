@@ -17,10 +17,34 @@ const Home = () => {
       <main>
         {/* Hero Section */}
         <Section className="hero">
+
   {/* Floating decorative icons */}
   <FaGraduationCap className="floating" />
   <FaBook className="floating" />
   <FaBullseye className="floating" />
+
+          <Container>
+            <Pill>
+              <span className="dot" /> Step Forward — "Songa"
+            </Pill>
+            <h1>
+              Empowering Students to Step Forward in Education & Leadership
+            </h1>
+            <p>
+              We mentor, inform, and equip students from primary school to
+              university with scholarships guidance, skill‑building, and
+              practical opportunities—so they can lead change in their
+              communities.
+            </p>
+            <div className="hero-buttons">
+              <Button to="/programs">Explore Programs →</Button>
+              <Button variant="ghost" to="/scholarship">
+                Find Scholarships
+              </Button>
+            </div>
+          </Container>
+        </Section>
+
 
   <Container>
     <Pill>
