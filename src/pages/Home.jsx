@@ -30,7 +30,7 @@ const Home = () => {
               communities.
             </p>
             <div className="hero-buttons">
-              <Button to="/programs">Explore Programs</Button>
+              <Button to="/programs">Explore Programs →</Button>
               <Button variant="ghost" to="/scholarship">
                 Find Scholarships
               </Button>
