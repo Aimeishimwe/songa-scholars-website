@@ -1,57 +1,98 @@
-/* src/css/team.css */
-
 .team {
   background-color: #0e0b10;
   color: white;
   padding: 5rem 1rem;
 }
 
+.team-position-section {
+  margin-top: 3rem;
+}
+
+/* General team grid */
 .team-grid {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center; /* center last or single items in a row */
+}
+
+/* Executive Board - two at top, three at bottom */
+.team-grid.executive-top {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.team-grid.executive-bottom {
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 2rem;
 }
 
-@media (min-width: 640px) {
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .team-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
+/* Team card styles */
 .team-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 2rem;
   padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .team-member {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .team-img {
-  width: 56px;
-  height: 56px;
-  border-radius: 0.75rem;
+  width: 140px;
+  height: 140px;
+  border-radius: 1rem;
   object-fit: cover;
-  border: 1px solid rgba(212, 175, 55, 0.25); /* gold ring */
+  border: 2px solid rgba(212, 175, 55, 0.6); /* gold ring */
 }
 
 .team-name {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.1rem;
   color: white;
 }
 
 .team-role {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.team-profile-link {
+  margin-top: 0.5rem;
+  display: inline-block;
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.team-profile-link:hover {
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .team-grid.executive-top,
+  .team-grid.executive-bottom {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .team-grid {
+    grid-template-columns: 1fr; /* single column on mobile */
+    justify-items: center; /* center single items */
+  }
 }

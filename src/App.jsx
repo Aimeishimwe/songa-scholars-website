@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Programs from "./pages/Programs";
 import Impact from "./pages/Impact";
 import Team from "./pages/Team";
+import TeamProfile from "./pages/TeamProfile"; // ✅ import TeamProfile
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
 import Gallery from "./pages/Gallery";
@@ -25,6 +26,8 @@ export default function App() {
           <Route path="/programs" element={<Programs />} />
           <Route path="/impact" element={<Impact />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/team/:memberName" element={<TeamProfile />} />{" "}
+          {/* ✅ TeamProfile route */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/gallery" element={<Gallery />} />

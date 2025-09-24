@@ -59,10 +59,12 @@ const Footer = () => {
           <h4>Contact</h4>
           <ul>
             <li>
-              <a href="mailto:info@songascholars.org">info@songascholars.org</a>
+              <a href="mailto:songascgolars@gmail.com">
+                songascholars@gmail.com
+              </a>
             </li>
             <li>Kigali, Rwanda</li>
-            <li>@SongaScholars</li>
+            <li>@Songa_Scholars_Foundation</li>
           </ul>
         </div>
       </div>

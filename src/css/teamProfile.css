@@ -1,0 +1,119 @@
+/* TeamProfile.css - Individual Member Profile Page */
+
+.team-profile-container {
+  background-color: #0e0b10;
+  color: white;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: flex-start; /* start from top */
+  padding: 8rem 1rem 4rem; /* top padding ensures space from navbar */
+  margin-bottom: 8rem;
+}
+
+.team-profile-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+  max-width: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 2rem; /* additional space from navbar */
+  margin-bottom: 4rem;
+}
+
+.team-profile-card:hover {
+  transform: translateY(-3px); /* slightly reduced for smoother effect */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.team-profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 1rem;
+  object-fit: cover;
+  border: 3px solid rgba(212, 175, 55, 0.7); /* gold ring */
+  margin-bottom: 2rem; /* spacing below image */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.team-profile-img:hover {
+  transform: scale(1.05);
+}
+
+.team-name {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.team-role {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+.team-bio {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: left; /* left-aligned for readability */
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 500px; /* constrain width for readability */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styled Back to Team button */
+.team-profile-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #0e0b10;
+  background-color: #d4af37; /* gold */
+  padding: 0.6rem 1.5rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.team-profile-link:hover {
+  background-color: #b88a1e; /* darker gold on hover */
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .team-profile-card {
+    padding: 2.5rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-profile-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .team-profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .team-bio {
+    text-align: left;
+    font-size: 0.95rem;
+  }
+}

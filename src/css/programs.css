@@ -1,4 +1,47 @@
-/* src/css/programs.css */
+.programs-hero {
+  position: relative;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: url("/images/programs-banner.jpg") center/cover no-repeat;
+  overflow: hidden;
+  padding: 5rem 1rem;
+}
+
+.programs-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(14, 11, 16, 0.8)
+  );
+  z-index: 0;
+}
+
+.programs-hero-title,
+.programs-hero-subtitle {
+  position: relative;
+  z-index: 2;
+}
+
+.programs-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.programs-hero-subtitle {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
 
 .programs {
   background-color: var(--dark);
@@ -8,12 +51,12 @@
 
 .program-cards {
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
   grid-template-columns: 1fr;
   margin-top: 2rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .program-cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -28,35 +71,49 @@
 .program-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 2rem;
-  padding: 1.5rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
   transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .program-card:hover {
-  border-color: #d4af37; /* gold hover border */
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  border-color: var(--gold);
 }
 
-.program-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.5rem;
-  width: 2.5rem;
-  background-color: #d4af37;
-  color: #0e0b10;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
+.program-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
-.program-card h3 {
-  font-size: 1.1rem;
+.program-content {
+  padding: 1.5rem;
+}
+
+.program-content h3 {
+  font-size: 1.2rem;
   font-weight: 600;
   color: white;
+  margin-bottom: 0.5rem;
 }
 
-.program-card p {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+.program-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.programs-cta {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Fade-in */
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }

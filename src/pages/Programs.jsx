@@ -1,5 +1,5 @@
 // src/pages/Programs.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Section from "../components/Section";
@@ -7,44 +7,45 @@ import Container from "../components/Container";
 import SectionHeader from "../components/SectionHeader";
 import Button from "../components/Button";
 import "../css/programs.css";
-import "../css/scholarships.css"; // for scholarship styles
+import "../css/scholarships.css";
 
 const Programs = () => {
   const programItems = [
     {
       id: "mentorship",
       title: "Mentorship & Career Guidance",
-      text: "Interactive sessions from primary to university; CV & personal statement clinics; interview prep; career roadmaps.",
+      text: "Helping students build confidence, leadership, and make informed career choices through interactive mentorship and career support.",
+      image: "/images/mentorship.jpg",
     },
     {
-      id: "bootcamps",
-      title: "Bootcamps & Prep Sessions",
-      text: "Targeted support for high‑school graduates applying to universities and scholarships; weekend sprints and cohort‑based learning.",
+      id: "scholarship-access",
+      title: "Scholarship Access & University Preparation",
+      text: "Bootcamps, application assistance, and a scholarship database targeting both local and international opportunities.",
+      image: "/images/scholarship.jpg",
     },
     {
-      id: "capacity-building",
-      title: "Capacity Building & Leadership Training",
-      text: "Skill‑based workshops: digital literacy, research, leadership, project management, and public speaking.",
+      id: "digital-learning",
+      title: "Digital Learning & Capacity Building",
+      text: "Webinars, podcasts, and online challenges to expand reach and engage students at scale.",
+      image: "/images/digital-learning.jpg",
     },
     {
-      id: "problem-solving",
-      title: "Problem‑Solving & Grant Support",
-      text: "Guide students to design community projects (climate, entrepreneurship, health) and apply for grants and fellowships.",
+      id: "student-empowerment",
+      title: "Student Empowerment & Innovation",
+      text: "Fostering entrepreneurship, design thinking, and talent development for impactful student initiatives.",
+      image: "/images/empowerment.jpg",
     },
     {
-      id: "girls-empowerment",
-      title: "Girls & Women Empowerment",
-      text: "Gender‑focused programs that uplift young women in education, leadership, and opportunity access.",
+      id: "community-knowledge",
+      title: "Community & Knowledge Sharing",
+      text: "Peer learning circles and collaborative platforms for continuous growth and stronger community ties.",
+      image: "/images/community.jpg",
     },
     {
-      id: "podcasts",
-      title: "Podcasts & Online Content",
-      text: "Inspire and inform through stories, how‑tos, and conversations with mentors and alumni.",
-    },
-    {
-      id: "community-reach",
-      title: "Community Reach",
-      text: "Rural and primary school outreach; train‑the‑trainer with educators and local partners.",
+      id: "alumni-network",
+      title: "Alumni Engagement & Networking",
+      text: "Connecting program alumni for mentorship, collaboration, and knowledge sharing across communities.",
+      image: "/images/alumni.jpg",
     },
   ];
 
@@ -87,43 +88,64 @@ const Programs = () => {
     },
   ];
 
+  // Fade-in animation
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    const elements = document.querySelectorAll(
+      ".program-card, .scholarship-card"
+    );
+    elements.forEach((el) => observer.observe(el));
+  }, []);
+
   return (
-    <div
-      className="app"
-      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
-    >
+    <div className="app">
       <Navbar />
-      <main style={{ flexGrow: 1 }}>
+
+      {/* Hero Banner */}
+      <Section className="programs-hero">
+        <Container>
+          <h1 className="programs-hero-title">Our Programs</h1>
+          <p className="programs-hero-subtitle">
+            Songa Scholars Foundation runs programs across six pillars,
+            empowering students through mentorship, scholarships, innovation,
+            and community engagement.
+          </p>
+        </Container>
+      </Section>
+
+      <main>
         {/* Programs Section */}
         <Section className="programs">
           <Container>
             <SectionHeader
               eyebrow="What we do"
-              title="Core Programs"
-              subtitle="All designed to move students from interest → readiness → success."
+              title="Our Programs"
+              subtitle="We run programs across six pillars, tailored to student levels and contexts."
             />
             <div className="program-cards">
               {programItems.map((item) => (
-                <div key={item.id} id={item.id} className="program-card">
-                  <div className="program-icon">
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M12 20l9-5-9-5-9 5 9 5z" />
-                      <path d="M12 12l9-5-9-5-9 5 9 5z" />
-                    </svg>
+                <div key={item.id} className="program-card">
+                  <img src={item.image} alt={item.title} />
+                  <div className="program-content">
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
                   </div>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
                 </div>
               ))}
+            </div>
+            <div className="programs-cta">
+              <Button href="/contact">Join Our Programs</Button>
             </div>
           </Container>
         </Section>
@@ -136,7 +158,7 @@ const Programs = () => {
               title="Scholarship Hub"
               subtitle="Browse featured, upcoming, and evergreen opportunities. Save what fits, track deadlines, and get application tips."
             />
-            <div className="scholarship-cards" id="scholarships">
+            <div className="scholarship-cards">
               {scholarships.map((s) => (
                 <div key={s.id} className="scholarship-card">
                   <div className="scholarship-tag">{s.tag}</div>

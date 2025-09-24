@@ -1,16 +1,17 @@
 // src/components/Button.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import "../css/button.css";
 
-const Button = ({ children, href = "#", variant = "solid", onClick }) => {
+const Button = ({ children, to = "/", variant = "solid", onClick }) => {
   return (
-    <a
-      href={href}
+    <Link
+      to={to}
       onClick={onClick}
       className={`button ${variant === "solid" ? "solid" : "ghost"}`}
     >
       {children}
-    </a>
+    </Link>
   );
 };
 

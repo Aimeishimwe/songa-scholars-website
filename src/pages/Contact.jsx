@@ -36,7 +36,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <label>Email</label>
-                    <input type="email" placeholder="you@example.com" />
+                    <input type="email" placeholder="you@gmail.com" />
                   </div>
                   <div className="full-width">
                     <label>Message</label>
@@ -45,9 +45,7 @@ const Contact = () => {
                 </div>
 
                 <div className="form-footer">
-                  <div className="reply-time">
-                    We’ll reply within 2–3 working days.
-                  </div>
+                  <div className="reply-time">We’ll reply within 24 hours.</div>
                   <button className="btn">Send</button>
                 </div>
               </form>
@@ -68,11 +66,11 @@ const Contact = () => {
                   </div>
                   <div className="info-item">
                     <IconMail size={20} color="#d4af37" />
-                    <span>info@songascholars.org</span>
+                    <span>songascholars@gmail.com</span>
                   </div>
                   <div className="info-item">
                     <IconGlobe size={20} color="#d4af37" />
-                    <span>@SongaScholars (socials)</span>
+                    <span>@Songa_Scholars_Foundation (socials)</span>
                   </div>
                 </div>
               </div>
