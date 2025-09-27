@@ -21,7 +21,15 @@ export const teamData = [
     role: "Secretary General",
     position: "Executive Board",
     img: "/images/Sharon.jpg",
-    bio: "Sharon Natukunda is the custodian of all Foundation records and communications. She organizes and documents meetings of the Executive Board, maintains legal and archival documents, manages internal communications, and ensures accurate dissemination of decisions. At Songa Scholars Foundation, Sharon plays a key role in maintaining organizational transparency and operational efficiency.",
+    bio: `Natukunda Sharon is a medical student, virtual assistant, public speaker, and youth leader passionate about health, education, and sustainable community development.
+
+She combines medical training with skills in social media strategy, research, advocacy, and digital content creation, offering digital support services such as transcribing, content research, translation, and social media advertising.
+
+She currently serves as an Ingazi Youth Ambassador, Secretary — RDMS, Secretary — Songa Scholar Foundation, Deputy Executive Director at Isange Mama Initiative, and a researcher under SCORE in MEDSAR.
+
+Sharon has collaborated with organizations like UNICEF and Addenda and is driven by a commitment to advance health equity and amplify youth voices. She aims to merge medicine, innovation, and leadership to build healthier, more inclusive communities.
+
+Sharon Natukunda is the custodian of all Foundation records and communications. She organizes and documents meetings of the Executive Board, maintains legal and archival documents, manages internal communications, and ensures accurate dissemination of decisions. At Songa Scholars Foundation, Sharon plays a key role in maintaining organizational transparency and operational efficiency.`,
   },
   {
     name: "Pacifique Niyirera Ngabo",
