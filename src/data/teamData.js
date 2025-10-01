@@ -40,10 +40,40 @@ Sharon Natukunda is the custodian of all Foundation records and communications. 
   },
   {
     name: "Joyeuse Uwamahoro",
-    role: "Partnerships & Fundraising Director",
+    role: "Co-Director of Partnerships & Fundraising",
     position: "Executive Board",
     img: "/images/Joyeuse.jpg",
     bio: "Joyeuse Uwamahoro is a medical student, Millennium Fellow, and emerging leader passionate about education, health, and youth empowerment. Founder of the ISANGE MAMA INITIATIVE, she advocates for inclusive opportunities for girls through education and vocational training. At Songa Scholars Foundation, Joyeuse drives partnerships and fundraising efforts, mobilizing resources to expand opportunities for students and young people to thrive.",
+  },
+  {
+    name: "Divine Cyizere",
+    role: "Co-Director of Partnerships & Fundraising",
+    position: "Executive Board",
+    img: "/images/Divine.jpg",
+    bio: "Divine Cyizere is a dedicated pharmacy student passionate about bridging academics with real-life impact. Committed to advancing healthcare access through mentorship, leadership, and skills development, Divine actively empowers students and expands access to scholarships. At Songa Scholars Foundation, she now serves on the Executive Board as Co-Director of Partnerships & Fundraising, driving collaboration and mobilizing resources to expand opportunities for youth and students.",
+  },
+
+  // Partnerships & Fundraising Officers
+  {
+    name: "Dukundane Biganiro Roger",
+    role: "Partnerships & Fundraising Officer",
+    position: "Partnerships & Fundraising Officers",
+    img: "/images/Roger.jpg",
+    bio: "Dukundane Biganiro Roger is a medical student at the University of Rwanda and an impact-driven leader passionate about saving lives and expanding opportunities for young people across Rwanda and beyond. He has led youth mentorship programs, coordinated career guidance initiatives, and contributed to leadership development through CYGEN (Commonwealth Youth Gender and Equality Network). Guided by his values of transparency, collaboration, and networking, Roger works tirelessly to achieve common goals and create sustainable impact. At Songa Scholars Foundation, he contributes to partnerships and fundraising efforts, helping mobilize resources and build meaningful collaborations that empower students to reach their full potential.",
+  },
+  {
+    name: "Ikuzo Rita Xaviere",
+    role: "Partnerships & Fundraising Officer",
+    position: "Partnerships & Fundraising Officers",
+    img: "/images/Rita.jpg",
+    bio: "Ikuzo Rita Xaviere is a youth leader and advocate for education and equal opportunities. She supports Songa Scholars Foundation by mobilizing resources, engaging partners, and building networks that strengthen programs and student support.",
+  },
+  {
+    name: "Umuhire Ngukunde Pacifique",
+    role: "Partnerships & Fundraising Officer",
+    position: "Partnerships & Fundraising Officers",
+    img: "/images/Pacifique.jpg",
+    bio: "Umuhire Ngukunde Pacifique is committed to driving social impact through partnerships, collaboration, and youth empowerment. At Songa Scholars Foundation, he contributes to fundraising efforts and building relationships that expand opportunities for students.",
   },
 
   // Program Officers
@@ -55,11 +85,11 @@ Sharon Natukunda is the custodian of all Foundation records and communications. 
     bio: "Chiffra Ukwidukunda is a dedicated pharmacy student passionate about bridging academics with real-life impact. Growing up with resilience and determination, she has turned challenges into motivation, excelling in her studies and engaging in community service. She is committed to advancing healthcare access by combining pharmaceutical knowledge with mentorship, leadership, and skills development. Beyond academics, Chiffra actively seeks opportunities to empower fellow students, expand access to scholarships, and nurture leadership potential. At Songa Scholars Foundation, Chiffra coordinates programs and initiatives that provide mentorship, skill-building opportunities, and educational support, helping young learners thrive and reach their full potential.",
   },
   {
-    name: "Divine Cyizere",
+    name: "Iranzi Noella Ghislaine",
     role: "Programs & Initiatives Officer",
     position: "Programs & Initiatives Officers",
-    img: "/images/Divine.jpg",
-    bio: "Divine Cyizere is a dedicated pharmacy student passionate about bridging academics with real-life impact. Committed to advancing healthcare access through mentorship, leadership, and skills development, Divine actively empowers students and expands access to scholarships. At Songa Scholars Foundation, she coordinates programs that nurture leadership potential and educational success for young learners.",
+    img: "/images/Noella.jpg",
+    bio: "Iranzi Noella Ghislaine is passionate about mentorship, leadership, and advancing education. At Songa Scholars Foundation, she contributes as a Programs & Initiatives Officer, coordinating mentorship programs and supporting students in their academic and personal growth.",
   },
   {
     name: "Aliane Utuje Hitimana",
@@ -87,14 +117,14 @@ Sharon Natukunda is the custodian of all Foundation records and communications. 
     role: "Scholarship & Student Support Officer",
     position: "Scholarship & Student Support Officers",
     img: "/images/Samuel.jpg",
-    bio: "Samuel Mizero assists students in identifying scholarship opportunities, guides them through applications, and tracks academic progress. At Songa Scholars Foundation, he provides career counseling and academic support, helping students achieve their educational goals.",
+    bio: "Grounded in a deep spirit of commitment, accountability, and reformation, Samuel is a Rwandan youth passionate about education, innovation, and economic empowerment. He is currently pursuing a Bachelor’s degree in Economics and Social Research & Public Policy at New York University Abu Dhabi, with an interest in exploring how innovation can fuel sustainable development and reimagine better living for African communities and beyond. Through the McKinsey Forward Program, he strengthened his adaptability, problem-solving, and communication skills. As a Future Africa Ambassadors Program and MeetMentors EQUiP graduate, he deepened his commitment to living purposefully and empowering others to overcome challenges. Through the Young Africa Leaders Initiative (YALI), Samuel reinforced his dedication to driving impact through inclusive leadership. With this potential, Samuel’s vision is to be a catalyst for innovation-led growth that transforms education, leadership, and economic empowerment beyond the limits of the African continent. Samuel Mizero assists students in identifying scholarship opportunities, guides them through applications, and tracks academic progress. At Songa Scholars Foundation, he provides career counseling and academic support, helping students achieve their educational goals.",
   },
   {
     name: "Colette Nshyimyumuremyi",
     role: "Scholarship & Student Support Officer",
     position: "Scholarship & Student Support Officers",
     img: "/images/Collete.jpg",
-    bio: "Colette Nshimyumuremyi is a hardworking Clinical Medicine and Community Health student at the University of Rwanda with strong communication, leadership, and teamwork skills. Passionate about improving community health, she is committed to using her knowledge and dedication to create lasting positive impact through healthcare and community development.Colette Nshyimyumuremyi supports students in scholarship applications, monitors academic performance, and provides guidance for professional and personal growth. She ensures Songa Scholars Foundation students receive the support needed to succeed academically and build strong career pathways.",
+    bio: "Colette Nshyimyumuremyi is a hardworking Clinical Medicine and Community Health student at the University of Rwanda with strong communication, leadership, and teamwork skills. Passionate about improving community health, she is committed to using her knowledge and dedication to create lasting positive impact through healthcare and community development. Colette Nshyimyumuremyi supports students in scholarship applications, monitors academic performance, and provides guidance for professional and personal growth. She ensures Songa Scholars Foundation students receive the support needed to succeed academically and build strong career pathways.",
   },
   {
     name: "Emile Niyonkuru",

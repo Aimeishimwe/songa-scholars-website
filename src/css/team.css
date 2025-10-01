@@ -16,9 +16,9 @@
   justify-content: center; /* center last or single items in a row */
 }
 
-/* Executive Board - two at top, three at bottom */
+/* Executive Board - 3 at top, 3 at bottom */
 .team-grid.executive-top {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .team-grid.executive-bottom {
@@ -85,7 +85,7 @@
 @media (max-width: 1024px) {
   .team-grid.executive-top,
   .team-grid.executive-bottom {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
     justify-items: center;
   }
 }
