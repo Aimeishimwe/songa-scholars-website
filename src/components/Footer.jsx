@@ -1,6 +1,7 @@
 // src/components/Footer.jsx
 import React from "react";
 import { Link } from "react-router-dom";
+import { Mail, MapPin, Instagram, Linkedin } from "lucide-react"; // icons
 import "../css/footer.css";
 
 const Footer = () => {
@@ -54,17 +55,36 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Section */}
+        {/* Contact Section with Icons */}
         <div className="footer-section">
           <h4>Contact</h4>
-          <ul>
+          <ul className="contact-list">
             <li>
-              <a href="mailto:songascgolars@gmail.com">
-                songascholars@gmail.com
+              <a href="mailto:songascholars@gmail.com">
+                <Mail size={16} className="icon" /> songascholars@gmail.com
               </a>
             </li>
-            <li>Kigali, Rwanda</li>
-            <li>@Songa_Scholars_Foundation</li>
+            <li>
+              <MapPin size={16} className="icon" /> Kigali, Rwanda
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/Songa_Scholars_Foundation"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram size={16} className="icon" /> Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/songa-scholars"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin size={16} className="icon" /> LinkedIn
+              </a>
+            </li>
           </ul>
         </div>
       </div>

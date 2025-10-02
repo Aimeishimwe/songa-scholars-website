@@ -4,8 +4,7 @@
   color: white;
   padding: 3rem 1rem 1rem 1rem;
   font-size: 0.875rem;
-  /* Make footer stick to bottom */
-  margin-top: auto;
+  margin-top: auto; /* footer sticks to bottom */
 }
 
 .footer-container {
@@ -19,6 +18,7 @@
 .footer-section h4 {
   font-weight: 600;
   margin-bottom: 0.75rem;
+  color: #d4af37; /* gold accent for headers */
 }
 
 .footer-section ul {
@@ -31,16 +31,21 @@
   margin-bottom: 0.5rem;
 }
 
+/* links */
 .footer-section a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.7);
   transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .footer-section a:hover {
-  color: white;
+  color: #d4af37;
 }
 
+/* logo */
 .footer-logo {
   display: flex;
   align-items: center;
@@ -58,6 +63,20 @@
   border: 1px solid rgba(212, 175, 55, 0.25);
 }
 
+/* contact list */
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-list li .icon {
+  color: #d4af37;
+  flex-shrink: 0;
+}
+
+/* footer bottom */
 .footer-bottom {
   margin-top: 2rem;
   display: flex;
@@ -77,10 +96,11 @@
 
 .footer-bottom .footer-links a {
   color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s;
 }
 
 .footer-bottom .footer-links a:hover {
-  color: white;
+  color: #d4af37;
 }
 
 /* Tablet / Desktop */

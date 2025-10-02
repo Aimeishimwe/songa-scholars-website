@@ -66,10 +66,10 @@
   font-size: 1rem;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.85);
-  text-align: left; /* left-aligned for readability */
+  text-align: justify; /* justfied for readability */
   margin-bottom: 2rem;
   width: 100%;
-  max-width: 500px; /* constrain width for readability */
+  max-width: 600px; /* constrain width for readability */
   margin-left: auto;
   margin-right: auto;
 }

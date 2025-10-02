@@ -66,14 +66,15 @@ Sharon Natukunda is the custodian of all Foundation records and communications. 
     role: "Partnerships & Fundraising Officer",
     position: "Partnerships & Fundraising Officers",
     img: "/images/Rita.jpg",
-    bio: "Ikuzo Rita Xaviere is a youth leader and advocate for education and equal opportunities. She supports Songa Scholars Foundation by mobilizing resources, engaging partners, and building networks that strengthen programs and student support.",
+    bio: "Ikuzo Rita Xaviere lives at the powerful intersection of technology, health, and education. A Rwandan scholar in Medical Imaging Sciences, she sees the world through a lens of solutions: from improving diagnostic tools as Vice President of Medical Imaging Student Association of Rwanda (MISAR), to empowering youth through education programs with the Songa Scholars Foundation. For her, leadership is about building bridges, connecting advanced medical knowledge with community needs in her role as Secretary of the Rwanda Village Community Promoters (RVCP). My foundation for this work was laid early. Serving as Vice Secretary in Secondary School Student Council taught me the architecture of teamwork, while being in 2nd-place at national level in a French Competition showcased my discipline and global aptitude. As a selected Millennium Fellow, I joined a worldwide network of change-makers, solidifying my belief in the transformative power of education and discipline. I am a dynamic force, passionately committed to turning pressing social challenges into opportunities for sustainable, accessible growth. She supports Songa Scholars Foundation by mobilizing resources, engaging partners, and building networks that strengthen programs and student support.",
   },
+
   {
     name: "Umuhire Ngukunde Pacifique",
     role: "Partnerships & Fundraising Officer",
     position: "Partnerships & Fundraising Officers",
     img: "/images/Pacifique.jpg",
-    bio: "Umuhire Ngukunde Pacifique is committed to driving social impact through partnerships, collaboration, and youth empowerment. At Songa Scholars Foundation, he contributes to fundraising efforts and building relationships that expand opportunities for students.",
+    bio: "Pacifique Umuhire Ngukunde serves as the Partnership and Fundraising Organiser of the Songa Scholars Foundation, a program dedicated to empowering not only the academic but also professional careers of African youth. Currently, he is pursuing a bachelor’s degree in Medicine and Surgery, driven by a commitment to addressing and solving health and wealth challenges in the region. As a result-oriented innovator from Rwanda, Ngukunde is fueled by his limitless curiosity. Striving to make people feel alive, and also exploring the several corners of the world to learn and sense the earth’s natural beauty that we often neglect to invest in gives him joy. This dedication underpins Ngukunde’s lasting, impactful collaborations and innovative strategies to secure and enhance revenue growth. At Songa Scholars Foundation, he contributes to fundraising efforts and building relationships that expand opportunities for students.",
   },
 
   // Program Officers
