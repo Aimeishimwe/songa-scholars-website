@@ -21,15 +21,7 @@ export const teamData = [
     role: "Secretary General",
     position: "Executive Board",
     img: "/images/Sharon.jpg",
-    bio: `Natukunda Sharon is a medical student, virtual assistant, public speaker, and youth leader passionate about health, education, and sustainable community development.
-
-She combines medical training with skills in social media strategy, research, advocacy, and digital content creation, offering digital support services such as transcribing, content research, translation, and social media advertising.
-
-She currently serves as an Ingazi Youth Ambassador, Secretary — RDMS, Secretary — Songa Scholar Foundation, Deputy Executive Director at Isange Mama Initiative, and a researcher under SCORE in MEDSAR.
-
-Sharon has collaborated with organizations like UNICEF and Addenda and is driven by a commitment to advance health equity and amplify youth voices. She aims to merge medicine, innovation, and leadership to build healthier, more inclusive communities.
-
-Sharon Natukunda is the custodian of all Foundation records and communications. She organizes and documents meetings of the Executive Board, maintains legal and archival documents, manages internal communications, and ensures accurate dissemination of decisions. At Songa Scholars Foundation, Sharon plays a key role in maintaining organizational transparency and operational efficiency.`,
+    bio: `Sharon Natukunda is a medical student, virtual assistant, and youth leader passionate about education, mentorship, and youth empowerment. She serves as the General Secretary of Songa Scholars Foundation, a youth-led initiative dedicated to supporting students through critical educational transitions. In her role, Sharon ensures effective coordination, documentation, and communication across the foundation’s programs, while also contributing to mentorship and outreach activities. With strong skills in leadership, public speaking, and digital strategy, she is committed to helping students step forward with confidence, opportunities, and skills to succeed in education and beyond.`,
   },
   {
     name: "Pacifique Niyirera Ngabo",
